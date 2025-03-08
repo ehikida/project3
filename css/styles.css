@@ -8,18 +8,20 @@ body {
     "aside home-wrapper ridge"
     "footer footer footer";
   grid-template-columns: auto 2fr 1fr;
-  background-color: rgb(229, 223, 208);
 }
 
 header {
-  display: flex;
-  /* background-color: lightcoral; */
   grid-area: header;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   text-align: center;
   justify-content: center;
-  border-bottom: solid black;
-  background-color: rgb(219, 213, 198);
+  color: rgb(102, 118, 92);
+  border-bottom: solid rgb(102, 118, 92);;
+}
+
+header img {
+  width: 150px;
 }
 
 header h1 {
@@ -39,13 +41,11 @@ aside {
   grid-area: aside;
   display: flex;
   flex-wrap: wrap;
-
-  /* background-color: thistle; */
   flex-direction: column;
   width: 150px;
   padding-left: 10px;
+  color: rgb(219, 213, 198);
   background-color: rgb(102, 118, 92);
-  grid-row: minmax(auto, 1fr);
 }
 .menu {
   grid-area: menu;
@@ -58,6 +58,7 @@ aside {
 .menu-item {
   padding: 5px;
   cursor: pointer;
+  color: rgb(219, 213, 198);
 }
 
 button {
@@ -68,13 +69,14 @@ button {
 
 details {
   grid-area: details;
-  margin-top: 50px;
   flex-wrap: wrap;
+  margin-top: 50px;
   margin-left: 10px;
 }
 
 .home-wrapper {
   grid-area: home-wrapper;
+  background-color: rgb(209, 204, 186);
 }
 
 #home div {
@@ -100,20 +102,18 @@ details {
   grid-area: ridge;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(219, 213, 198);
   justify-content: center;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  /* overflow: scroll; */
+  background-color: rgb(102, 118, 92);
+  padding-bottom: 50px;
 }
 #ridge p {
+  justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
-  justify-content: center;
 }
 #ridge figure img {
-  width: 200px;
   text-align: center;
+  width: 200px;
   line-height: 100%;
 }
 
@@ -169,7 +169,6 @@ footer a {
   details {
     margin-top: auto;
   }
-}
-.home-wrapper {
-  margin-bottom: 10px;
-}
+  .home-wrapper {
+    margin-bottom: 10px;
+  }
