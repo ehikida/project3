@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- 
+Project:  Project3-Responsive Web Site
+Name: Beth Mena
+Submitted: 3/7/25
+ 
+I declare that the following source code was written by me, or provided by the instructor for this project. 
+I understand that copying source code from any other source, providing source code to another student, or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may resultin a zero grade, a permanent record on file and possibly immediate failure of the class.
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="
+    css/styles.css" />
+  <script src="https://kit.fontawesome.com/ad48b59e3f.js" crossorigin="anonymous"></script>
+  <title>Presenters Club</title>
+</head>
+
+<body>
+  <header>
+    <h1><i class="fa-regular fa-heart"></i> Presenters Club <i class="fa-regular fa-heart"></i></h1>
+    <h6>at The Ridge</h6>
+  </header>
+  <aside>
+    <nav class="menu">
+      <!-- <div class="menu-item" id="home-button"><i class="fa-solid fa-house"></i> Home</div>
+      <div class="menu-item" id="future-button"><i class="fa-regular fa-calendar"></i> Upcoming presentations</div>
+      <div class="menu-item" id="past-button"><i class="fa-regular fa-paper-plane"></i> Past presentations</div> -->
+      <button class="menu-item" id="home-button" onclick="openMenu('home')"><i class="fa-solid fa-house"></i> Home</button>
+      <button class="menu-item" id="future-button"onclick="openMenu('future')"><i class="fa-regular fa-calendar"></i> Upcoming presentations</button>
+      <button class="menu-item" id="past-button"onclick="openMenu('past')"><i class="fa-regular fa-paper-plane"></i> Past presentations</button>
+    </nav>
+    <details>
+      <summary>The Ridge</summary>
+      <p>The Ridge is a neighborhood located in Saratoga Springs, Utah. It was established in 2019 and is still growing!
+      </p>
+    </details>
+  </aside>
+
+  <main class="home-wrapper">
+    <section class = "main-item" id="home">
+      <div>
+        <p>
+          <em>Welcome</em> to the Presenters Club at The Ridge! We meet every
+          second Tuesday of the month. Our presenters are usually, but no always
+          members of our neighborhood.
+        </p>
+        <p>The types of things we learn include:
+        <ul>
+          <li>Health & Beauty</li>
+          <li>Cooking, Baking and Meal plannning</li>
+          <li>Home Care</li>
+        </ul>
+        </p>
+      </div>
+
+    </section>
+    <section class = "main-item" id="future">
+      <h2>Upcoming Classes:</h2>
+      <h3>Keep your calendar open! We have the following classes scheduled:</h3>
+      <h5>March 18: Gardening with Alisha</h5>
+      <p>Spring is just around the corner! Alisha has one of the most beautiful yards in the neighborhood. Learn all of her tips and tricks to keep your plans looking their best. Reservation fee of $5</p>
+      
+      <h5>April 8: German Cooking with Julie</h5>
+      <p>Want to eat German food? No need to fly to Germany, just come to this class to learn! Julie will be teaching us how to make goulashk spetzle nad German potato salad. YUM!</p>
+      <h5>April 22: Makeup Tutorial with Brittany</h5>
+      <p>Need a refresher on makeup application? Looking for the newest trends? Come hear Brittany give us all the scoops! Bring the makeup you have in your stash and apply in class!</p>
+    </section>
+    <section class = "main-item" id="past">
+      <h2>Past Events</h2>
+      <p>We have some incredibly talented women in our neighborhood. </p>
+          <ul>
+            <li>Cake Decorating with Angie</li>
+            <li>Home Sweet Home with Sarah</li>
+            <li>Digestive Health and Meal planning with Ann</li>
+            <li>Meditation & Sound Bath with Angela</li>
+            <li>Basics of Sourdough with Jen</li>
+            <li>French Macarons with Beth</li>
+            <li>Houseplant 101 with Katie</li>
+            <li>Sound Bath with Amy</li>
+            <li>Protein Meal planning with Margot</li>
+            <li>Thai Food 101 with Angie</li>
+
+          </ul>
+      <div>
+        <p>Having a hard time mastering those macarons? Here are some tips from Beth's favorite Macaron Instagrammer!</p>
+        <iframe class = "main-item" id="video" width="560" height="315" src="https://www.youtube.com/embed/RumykGlvRVg?si=KUbwCkLYAMAlQ4gh"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  <article id="ridge">
+    <p>Here are some of the things members have made after attending a presentation:</p>
+    <figure>
+      <img src="img/bread.JPG" alt="bread">
+      <figcaption>Fresh Homemade bread</figcaption>
+    </figure>
+    <figure>
+      <img src="img/cake.JPG" alt="cake">
+      <figcaption>A decorated cake!</figcaption>
+    </figure>
+    <figure>
+      <img src="img/macs.JPG" alt="macarons">
+      <figcaption>Homemade macarons</figcaption>
+    </figure>
+    <figure>
+      <img src="img/pita.JPG" alt="pita">
+      <figcaption>Healthy pita for lunch!</figcaption>
+    </figure>
+    <figure>
+      <img src="img/yogurt.JPG" alt="yogurt">
+      <figcaption>Yogurt bowl</figcaption>
+    </figure>
+  </article>
+  <footer>
+    <div>
+      <i class="fa-brands fa-square-facebook"></i>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/groups/1150728038419121" target="blank">The Ridge Neighborhood</a>
+    </div>
+  </footer>
+</body>
+<script src="js/index.js" rel="stylesheet"></script>
+
+</html>
+
+<!----SELF GRADE--
+overall look and feel                       A 
+Content, interaction and responsiveness     A 
+Code- CSS, HTML and JS                      A 
+
+
+--EXTRA CREDIT COMPLETED--
+Animation (2pts)                    No
+Fontawesome icons (2pts)            YES
+media query image change (2pts)     No
+
+
+ADDITIONAL COMMENTS:
+
+
+ -->
