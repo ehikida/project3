@@ -17,7 +17,7 @@ header {
   text-align: center;
   justify-content: center;
   color: rgb(102, 118, 92);
-  border-bottom: solid rgb(102, 118, 92);;
+  border-bottom: solid rgb(102, 118, 92);
 }
 
 header img {
@@ -172,3 +172,4 @@ footer a {
   .home-wrapper {
     margin-bottom: 10px;
   }
+}
