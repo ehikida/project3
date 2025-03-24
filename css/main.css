@@ -10,7 +10,7 @@ body {
     "aside home-wrapper ridge"
     "footer footer footer";
   grid-template-columns: auto 2fr 1fr;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 header {
