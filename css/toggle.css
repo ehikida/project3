@@ -1,0 +1,58 @@
+/* This secondary theme changes the color theme from shades of blue with black text to shades of pink. I changed the font, as well as the overall grid layout. I kept the media query layout the same, as it made the most sense.*/
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  grid-template-areas:
+    "header header"
+    "aside aside"
+    "ridge home-wrapper"
+    "footer footer";
+  grid-template-columns: 1fr 2fr;
+}
+
+header {
+  border-bottom: none;
+  color: rgb(220, 87, 180);
+}
+
+aside {
+  width: auto;
+  background-color: rgb(156, 59, 127);
+}
+
+.menu {
+  flex-direction: row;
+}
+
+button {
+  background-color: rgb(156, 59, 127);
+}
+details {
+  margin-top: 10px;
+}
+
+#ridge {
+  background-color: rgb(220, 169, 205);
+}
+figcaption {
+  background-color: rgb(156, 59, 127);
+}
+.home-wrapper {
+  background-color: white;
+  color: rgb(156, 59, 127);
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-areas:
+      "header"
+      "aside"
+      "home-wrapper "
+      "ridge"
+      "footer";
+    grid-template-columns: auto;
+  }
+}
+footer {
+  background-color: rgb(156, 59, 127);
+}
