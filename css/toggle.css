@@ -27,6 +27,10 @@ aside {
 button {
   background-color: rgb(156, 59, 127);
 }
+
+button:hover {
+  background-color: rgb(137, 0, 96);
+}
 details {
   margin-top: 10px;
 }
